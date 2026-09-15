@@ -1,0 +1,1 @@
+ALTER TABLE `nutrition_entries` ADD `food_kind` text DEFAULT 'regular' NOT NULL;

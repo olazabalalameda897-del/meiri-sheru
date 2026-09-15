@@ -1,9 +1,10 @@
+import type {FoodKind,PetState,PetSpecies} from "./pet";
 export const meals = ["早餐", "午餐", "晚餐", "加餐"] as const;
 export type Meal = typeof meals[number];
 export type Nutrients = {calories:number;protein:number;carbs:number;fat:number};
-export type Entry = Nutrients & {id:string;date:string;meal:Meal;name:string;grams:number;source?:string};
+export type Entry = Nutrients & {id:string;date:string;meal:Meal;name:string;grams:number;source?:string;foodKind?:FoodKind};
 export type Goals = Nutrients & {water:number;mode:string};
-export type Journal = {entries:Entry[];waterEntries:{id:string;amount:number}[];goals:Goals;goalsSet:boolean};
+export type Journal = {entries:Entry[];waterEntries:{id:string;amount:number}[];goals:Goals;goalsSet:boolean;pet?:PetState;petSpecies?:PetSpecies};
 export const defaultGoals:Goals={calories:2000,protein:120,carbs:245,fat:60,water:2000,mode:"保持状态"};
 export const foods = [
  {name:"白米饭 · 熟",calories:130,protein:2.7,carbs:28.2,fat:0.28,source:"https://tools.myfooddata.com/recipe-nutrition-calculator/168878/100g/1/1",portion:150,hint:"约一小碗 · 150 g"},

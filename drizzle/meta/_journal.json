@@ -8,6 +8,20 @@
       "when": 1789395432223,
       "tag": "0000_mysterious_king_bedlam",
       "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "6",
+      "when": 1789396541539,
+      "tag": "0001_bright_oracle",
+      "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "6",
+      "when": 1789397242376,
+      "tag": "0002_clean_zodiak",
+      "breakpoints": true
     }
   ]
 }
